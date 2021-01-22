@@ -51,7 +51,7 @@ function hotelCost(days) {
   // checking if days are less than or equal zero
   if (days <= 0) {
     // error message
-    return 'Days cannot be zero or negative!\nEnter valid value';
+    return 'Days cannot be zero or negative! Enter valid value.';
   }
   // checking if days are less than ten
   else if (days <= 10) {
@@ -95,7 +95,7 @@ function megaFriend(names) {
   // checking if the array is empty or have only one element
   if ((names.length == 0) || (names.length == 1)) {
     // error message-1
-    return "Error: Number of element in the array cannot be zero or one.\nEnter two or more valid names to compare.";
+    return "Error: Number of element in the array cannot be zero or one. Enter two or more valid names to compare.";
   }
   else {
     for (var i = 0; i < names.length; i++) {
@@ -103,7 +103,7 @@ function megaFriend(names) {
       // checking if the array contains any blank name
       if (names[i].length == 0) {
         // error message-2
-        return "there is a empty string.please fill up the string with a name";
+        return "Error: There is a empty string! Please fill up the string with a name";
       }
       else if (megaName.length > max.length) {
         max = megaName;
@@ -124,3 +124,5 @@ var friendsNames3 = ["abu", "", "hablu", "jubayer", "", "mokhles", "samsuddin", 
 
 // printing the output
 console.log(megaFriend(friendsNames));
+console.log(megaFriend(friendsNames2));
+console.log(megaFriend(friendsNames3));

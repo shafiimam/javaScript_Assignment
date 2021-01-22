@@ -14,7 +14,7 @@ function kilometerToMeter(kilometer) {
 }
 //variable with valid value
 var result = kilometerToMeter(55.20);
-// variable with invalid value
+// variable with invalid value will give error message
 var result2 = kilometerToMeter(-19);
 
 console.log(result);
@@ -42,7 +42,9 @@ function budgetCalculator(watch, phone, laptop) {
 var shopping = budgetCalculator(1, 2, 5);
 // invalid values will give error message
 var shopping2 = budgetCalculator(-1, 4, -5);
+// printing the output
 console.log(shopping);
+console.log(shopping2);
 
 // 3.function to calculate hotel cost 
 
